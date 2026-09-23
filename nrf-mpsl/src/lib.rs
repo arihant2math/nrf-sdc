@@ -77,6 +77,8 @@ pub use nrf_mpsl_sys as raw;
 // This mod MUST go first, so that the others see its macros.
 pub(crate) mod fmt;
 
+/// Radio coexistence interface.
+pub mod cx;
 /// Error handling.
 mod error;
 /// Flash operations using the timeslot API.
